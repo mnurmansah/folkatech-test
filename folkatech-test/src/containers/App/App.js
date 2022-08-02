@@ -3,9 +3,8 @@ import "./App.scss";
 import { Route, Routes, Outlet } from "react-router-dom";
 // import Loading from './views/pages/Loading/Loading.jsx';
 
-// User Page
   // const Home = React.lazy(() => import("./../Dashboard/Dashboard"));
-  const Home = React.lazy(() => import("./../Dashboard/Dashboard"));
+  const Home = React.lazy(() => import("./../Dashboard/ProductList/ProductList"));
   
   export default function App() {
   return (

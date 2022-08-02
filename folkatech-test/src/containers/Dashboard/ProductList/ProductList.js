@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Accordion,Breadcrumb, Col, Card, Row, Button, Modal, Form, InputGroup, DropdownButton, Dropdown, Container, Nav } from 'react-bootstrap';
 // import "./Loading.css";
-import ProductCard from './ProductCard/ProductCard';
-import Navibar from '../../components/Navibar/Navibar';
-import Filter from '../../components/Filter/Filter';
-import './Dashboard.scss'
+import ProductCard from './../ProductCard/ProductCard';
+import Navibar from './../../../components/Navibar/Navibar';
+import Filter from './../../../components/Filter/Filter';
+import './ProductList.scss'
 
-function Dashboard(props) {
+function ProductList(props) {
 
   // const [state, setState] = useState({
   //   data: [],
@@ -160,11 +160,11 @@ function Dashboard(props) {
           </Row>
           <Row>
             {
-                cars.map((car, index) => (
+                cars.map((product, index) => (
                 // state.data.map((car, index) => (
                   <Col xs={6} md={4} className={index % 2 === 0 ? 'pb-2' : 'pt:2'} key={index}>
                     <ProductCard
-                      car={car}
+                      product={product}
                     />
                   </Col>
                 ))
@@ -173,8 +173,10 @@ function Dashboard(props) {
           </Col>
         </Row>
       </div>
+      <div style={{ paddingTop: "5em" }}>
+      </div>
     </>
   );
 }
 
-export default Dashboard;
+export default ProductList;

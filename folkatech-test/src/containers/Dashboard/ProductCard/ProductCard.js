@@ -5,7 +5,7 @@ import { Card, Col, Row } from 'react-bootstrap';
 import './ProductCard.scss';
 
 const ProductCard = ({
-  car: {
+  product: {
     src, name, last_name, location, init_location, year, view, mode, km, price, star,
   },
 }) => (
@@ -14,7 +14,7 @@ const ProductCard = ({
       className="mgb-2 account-card"
     >
       <Card.Body>
-        <Card.Text className="">
+        <Card.Text>
           <img src={src} width="200" height="200" className="image" />
         </Card.Text>
         <Card.Title className="font-weight-normal fs-11">
@@ -25,20 +25,6 @@ const ProductCard = ({
               <p className="link mgt-5">{last_name}</p>
             </b>
           </p>
-          <p>
-            {location}
-            <b>{init_location}</b>
-          </p>
-          <p className="pdl-12 bg-light">
-            { year }
-            <br />
-            {view}
-            <br />
-            {mode}
-            <br />
-            {km}
-            <br />
-          </p>
         </Card.Title>
         <Card.Title>
           <Row>
@@ -46,11 +32,6 @@ const ProductCard = ({
               <p className="fs-11 font-price">
                 { price }
               </p>
-            </Col>
-            <Col>
-              <Card.Text class="pdt-15 text-center">
-                <img src={star} width="70" height="70" className="image" />
-              </Card.Text>
             </Col>
           </Row>
         </Card.Title>
@@ -60,7 +41,7 @@ const ProductCard = ({
 );
 
 ProductCard.propTypes = {
-  car: PropTypes.object.isRequired,
+  product: PropTypes.object.isRequired,
 };
 
 export default ProductCard;

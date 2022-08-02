@@ -77,9 +77,10 @@ const Filter = () => (
               <Form.Group>
                 {['checkbox'].map((type) => (
                   <div key={`${type}`}>
-                    <Form.Check label="Arabika" type={type} id={`${type}-1`} />
-                    <Form.Check label="Robusta" type={type} id={`${type}-2`} />
-                    <Form.Check label="Blend" type={type} id={`${type}-3`} />
+                    <Form.Check label="Light Roast" type={type} id={`${type}-1`} />
+                    <Form.Check label="Medium Roast" type={type} id={`${type}-2`} />
+                    <Form.Check label="Dark Roast" type={type} id={`${type}-3`} />
+                    <Form.Check label="Light to Medium Roast" type={type} id={`${type}-4`} />
                   </div>
                 ))}
               </Form.Group>
@@ -93,9 +94,12 @@ const Filter = () => (
               <Form.Group>
                 {['checkbox'].map((type) => (
                   <div key={`${type}`}>
-                    <Form.Check label="Arabika" type={type} id={`${type}-1`} />
-                    <Form.Check label="Robusta" type={type} id={`${type}-2`} />
-                    <Form.Check label="Blend" type={type} id={`${type}-3`} />
+                    <Form.Check label="Sweet" type={type} id={`${type}-1`} />
+                    <Form.Check label="Floral" type={type} id={`${type}-2`} />
+                    <Form.Check label="Fruity" type={type} id={`${type}-3`} />
+                    <Form.Check label="Nutty" type={type} id={`${type}-4`} />
+                    <Form.Check label="Cocoa" type={type} id={`${type}-5`} />
+                    <Form.Check label="Spices" type={type} id={`${type}-6`} />
                   </div>
                 ))}
               </Form.Group>
@@ -109,9 +113,10 @@ const Filter = () => (
               <Form.Group>
                 {['checkbox'].map((type) => (
                   <div key={`${type}`}>
-                    <Form.Check label="Arabika" type={type} id={`${type}-1`} />
-                    <Form.Check label="Robusta" type={type} id={`${type}-2`} />
-                    <Form.Check label="Blend" type={type} id={`${type}-3`} />
+                    <Form.Check label="Honey White" type={type} id={`${type}-1`} />
+                    <Form.Check label="Natural" type={type} id={`${type}-2`} />
+                    <Form.Check label="Honey Gold" type={type} id={`${type}-3`} />
+                    <Form.Check label="Honey Yellow" type={type} id={`${type}-4`} />
                   </div>
                 ))}
               </Form.Group>
