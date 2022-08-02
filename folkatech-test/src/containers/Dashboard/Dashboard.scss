@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+
+.jumbotron {
+  &.header-jumbotron {
+    background-color: $white;
+  }
+}
+
+.total-balance {
+  line-height: 33px;
+}
+
+
+// .react-calendar__tile time {
+//   display: none;
+// }
